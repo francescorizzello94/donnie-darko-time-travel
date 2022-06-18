@@ -1,0 +1,114 @@
+.grid-container--technology {
+  --flow-space: 2rem;
+  padding: 0;
+  grid-template-areas:
+    'title'
+    'image'
+    'tabs'
+    'content';
+}
+
+.grid-container--technology picture {
+  grid-area: image;
+  max-width: 100%;
+  border-bottom: 1px solid hsl(var(--clr-white) / 0.1);
+}
+
+.grid-container--technology>.number-indicators {
+  grid-area: tabs;
+}
+
+.technology-details {
+  padding: 0 1rem;
+}
+
+.grid-container--technology>.technology-details {
+  grid-area: content;
+}
+
+.technology-details h2 {
+  color: hsl(var(--clr-white) / 0.5);
+}
+
+@media (min-width: 35em) {
+  .numbered-title {
+    justify-self: start;
+    margin-top: 2rem;
+  }
+
+  .destination-meta {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .grid-container--technology {
+    padding-bottom: 0;
+    grid-template-areas:
+      'title'
+      'content'
+      'tabs'
+      'image';
+  }
+}
+
+@media (min-width: 45em) {
+  .grid-container {
+    text-align: left;
+    column-gap: var(--container-gap, 3rem);
+    grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(1rem,
+        1fr);
+  }
+
+  .grid-container--home {
+    padding-bottom: max(6rem, 20vh);
+    align-items: end;
+  }
+
+  .grid-container--home>*:first-child {
+    grid-column: 2;
+  }
+
+  .grid-container--home>*:last-child {
+    grid-column: 3;
+  }
+
+  .grid-container--destination {
+    justify-items: start;
+    align-content: start;
+    grid-template-areas:
+      '. title title .'
+      '. image tabs .'
+      '. image content .';
+  }
+
+  .grid-container--destination>picture {
+    max-width: 90%;
+  }
+
+  .destination-meta {
+    --gap: min(6vw, 6rem);
+    justify-content: start;
+  }
+
+  .grid-container--technology {
+    padding: 0 clamp(1.5rem, 5vw, 3.5rem);
+    grid-template-columns: minmax(5rem, 1fr) minmax(0, 37rem) minmax(0, 23rem) minmax(1rem,
+        1fr);
+    justify-items: start;
+    grid-template-areas:
+      '. title title .'
+      'tabs content image image'
+      '. . . .';
+  }
+
+  .grid-container--technology>.number-indicators {
+    flex-direction: column;
+    justify-self: center;
+  }
+
+  .grid-container--technology>picture {
+    grid-column: 3 / -1;
+    // align-self: end;
+    max-width: 100%;
+  }
+}
