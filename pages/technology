@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/style_min.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Donnie Darko | Time Travel</title>
+</head>
+
+<body class="technology">
+
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <div>
+      <img src="../img/shared/logo.svg" alt="space tourism logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+        aria-expanded="false">Menu</span></button>
+    <nav>
+      <ul id="primary-navigation" data-visible="false"
+        class="primary-navigation primary-navigation--technology underline-indicators flex">
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="../index.html"><span
+              aria-hidden="true">00</span>Philosophy</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span
+              aria-hidden="true">01</span>Destination</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><span
+              aria-hidden="true">02</span>Time Travelers</a>
+        <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology.html"><span
+              aria-hidden="true">03</span>Vector</a>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="grid-container grid-container--technology flow">
+    <h1 class="numbered-title"><span aria-hidden="true">03</span>Space launch 101</h1>
+
+    <div class="number-indicators flex ff-serif fs-500" role="tablist" aria-label="crew member list">
+      <button aria-selected="true" aria-controls="launch-tab" role="tab" data-image="launch-image"
+        tabindex="0">1</button>
+      <button aria-selected="false" aria-controls="spaceport-tab" role="tab" data-image="spaceport-image"
+        tabindex="-1">2</button>
+      <button aria-selected="false" aria-controls="spacecapsule-tab" role="tab" data-image="spacecapsule-image"
+        tabindex="-1">3</button>
+    </div>
+
+    <!-- LAUNCH VEHICLE -->
+
+    <article class="technology-details flow" id="launch-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">The terminology...</h2>
+        <p class="fs-700 uppercase ff-serif">Launch vehicle</p>
+      </header>
+      <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+        payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+        WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+        it's quite an awe-inspiring sight on the launch pad!</p>
+    </article>
+
+    <!-- SPACEPORT -->
+
+    <article hidden class="technology-details flow" id="spaceport-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">The terminology...</h2>
+        <p class="fs-700 uppercase ff-serif">Spaceport</p>
+      </header>
+      <p>A spaceport or cosmodrome is a site for launching (or receiving) spacecraft,
+        by analogy to the seaport for ships or airport for aircraft. Based in the
+        famous Cape Canaveral, our spaceport is ideally situated to take advantage
+        of the Earth’s rotation for launch.</p>
+    </article>
+
+    <!-- SPACE CAPSULE -->
+
+    <article hidden class="technology-details flow" id="spacecapsule-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">The terminology...</h2>
+        <p class="fs-700 uppercase ff-serif">Space capsule</p>
+      </header>
+      <p>A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
+        capsule to reenter the Earth's atmosphere without wings. Our capsule is where
+        you'll spend your time during the flight. It includes a space gym, cinema,
+        and plenty of other activities to keep you entertained.</p>
+    </article>
+
+    <picture id="launch-image">
+      <source srcset="../img/technology/image-launch-vehicle-portrait.jpg" media="(min-width: 45em)">
+      <img src="../img/technology/image-launch-vehicle-landscape.jpg" alt="Launch Vehicle image">
+    </picture>
+    <picture hidden id="spaceport-image">
+      <source srcset="../img/technology/image-spaceport-portrait.jpg" media="(min-width: 45em)">
+      <img src="../img/technology/image-spaceport-landscape.jpg" alt="Spaceport image">
+    </picture>
+    <picture hidden id="spacecapsule-image">
+      <source srcset="../img/technology/image-space-capsule-portrait.jpg" media="(min-width: 45em)">
+      <img src="../img/technology/image-space-capsule-landscape.jpg" alt="Space Capsule image">
+    </picture>
+
+  </main>
+
+  <script src="../js/script.js"></script>
+
+</body>
+
+</html>

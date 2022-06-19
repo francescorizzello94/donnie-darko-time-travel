@@ -686,6 +686,7 @@ body {
     max-width: 90%;
   }
 
+
   .destination-meta {
     --gap: min(6vw, 6rem);
     -webkit-box-pack: start;

@@ -682,7 +682,7 @@ body {
   }
 
   .grid-container--destination>picture {
-    max-width: 90%
+    max-width: 90%;
   }
 
   .destination-meta {
