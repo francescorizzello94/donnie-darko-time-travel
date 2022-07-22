@@ -706,7 +706,7 @@ body {
 
   .grid-container--crew>picture {
     grid-column: span 2;
-    align-self: end;
+    /* align-self: end; */
     max-width: 90%
   }
 }
@@ -735,7 +735,7 @@ body {
 .grid-container--destination picture {
   grid-area: image;
   max-width: 60%;
-  align-self: start
+  /* align-self: start */
 }
 
 .grid-container--destination>.tab-list {
